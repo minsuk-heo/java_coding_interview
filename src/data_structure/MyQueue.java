@@ -1,12 +1,13 @@
 package data_structure;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Minsuk_Heo on 1/1/2017.
  */
 public class MyQueue {
-    ArrayList<Integer> queue = new ArrayList<Integer>();
+    List<Integer> queue = new ArrayList<Integer>();
 
     public void enqueue(Integer n) {
         queue.add(n);

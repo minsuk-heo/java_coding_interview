@@ -16,13 +16,8 @@ public class NumStack {
         st.push(2);
         st.push(3);
         st.push(4);
-        System.out.println(st.peek());
         System.out.println(st.pop());
         System.out.println(st.pop());
-        System.out.println(st.pop());
-        System.out.println(st.pop());
-
-
     }
 
     private int peek() {
@@ -36,7 +31,6 @@ public class NumStack {
         else {
             throw new java.util.NoSuchElementException();
         }
-
     }
 
     private void push(int i) {
@@ -48,6 +42,4 @@ public class NumStack {
             System.out.println("stack is full");
         }
     }
-
-
 }
