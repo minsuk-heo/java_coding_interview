@@ -22,7 +22,6 @@ public class CompressWord {
         sb.append(str.charAt(0));
 
         for(int i=1;i<str.length();i++) {
-
             if(buf == str.charAt(i)) {
                 cnt++;
             }
