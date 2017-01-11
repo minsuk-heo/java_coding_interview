@@ -28,7 +28,7 @@ public class DeleteDupInLinkedList {
         Node1 cur = node;
         while(cur != null) {
             if(hash.containsKey(cur.val)){
-                System.out.println("linked list has dup: "+cur.val);
+                System.out.println(" linked list has dup: "+cur.val);
                 prev.next = cur.next;
             }
             else {
