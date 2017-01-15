@@ -1,13 +1,12 @@
 package BitOperator;
 
-import javax.xml.bind.SchemaOutputResolver;
 
 /**
  * Created by minsukheo on 1/14/17.
  */
 public class BitOperatorTest {
     public static void main(String[] args) {
-        int i = 10; // 1010 in decimal expression
+        int i = 10; // 1010 in binary expression
         BitOperatorTest bitUtil = new BitOperatorTest();
         System.out.println(bitUtil.getBit(i, 0));
         System.out.println(bitUtil.getBit(i, 1));
