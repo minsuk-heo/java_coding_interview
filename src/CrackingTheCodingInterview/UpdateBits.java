@@ -14,7 +14,7 @@ package CrackingTheCodingInterview;
 public class UpdateBits {
 
     public static void main(String[] args) {
-        int N = 1024;   // 10000000000
+        int N = 1148;   // 10001111100
         int M = 19;     // 10011
         int i = 2;
         int j= 6;
