@@ -49,8 +49,8 @@ public class CheckBalancedBST {
             return -1;
         }
         else {
-            int balanceValue = Math.max(leftHeight, rightHeight)+1;
-            return balanceValue;
+            int depth = Math.max(leftHeight, rightHeight)+1;
+            return depth;
         }
     }
 }
