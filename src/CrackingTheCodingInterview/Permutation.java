@@ -1,6 +1,7 @@
 package CrackingTheCodingInterview;
 
 /**
+ * http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
  * Created by minsukheo on 1/14/17.
  */
 public class Permutation {

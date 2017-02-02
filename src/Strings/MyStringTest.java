@@ -13,6 +13,7 @@ public class MyStringTest {
         if(str1.equals(str2)) {
             System.out.println("same");
         }
+
         // How to Remove character in string
         str1 = "this is java";
         System.out.println(removeCharAt(str1,1));
@@ -23,6 +24,10 @@ public class MyStringTest {
         StringBuffer sb = new StringBuffer(str1);
         String reversed = sb.reverse().toString();
         System.out.println(reversed);
+
+        StringBuilder sb2 = new StringBuilder(str1);
+        String reversed2 = sb2.reverse().toString();
+        System.out.println(reversed2);
         // How to split
         str1 = "jan-feb-march";
         String[] temp;

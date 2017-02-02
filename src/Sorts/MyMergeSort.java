@@ -41,14 +41,10 @@ public class MyMergeSort {
                 k++;
             }
             while(i<=mid) {
-                arr[k] = tmpArr[i];
-                i++;
-                k++;
+                arr[k++] = tmpArr[i++];
             }
             while(j<=end) {
-                arr[k] = tmpArr[j];
-                j++;
-                k++;
+                arr[k++] = tmpArr[j++];
             }
         }
 

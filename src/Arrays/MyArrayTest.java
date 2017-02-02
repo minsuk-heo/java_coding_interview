@@ -13,7 +13,7 @@ public class MyArrayTest {
         //Sort
         Arrays.sort(array);
         printArray("Sorted array", array);
-        int index = Arrays.binarySearch(array, 2);
+        int index = Arrays.binarySearch(array, 20);
         System.out.println("Found 2 @ " + index);
 
         // reverse
@@ -37,7 +37,7 @@ public class MyArrayTest {
 
         // fill array at once
         int[] arr = new int[6];
-        //Arrays.fill(arr, 100);
+        Arrays.fill(arr, 100);
         arr[3] = 111;
         for(int i : arr){
             System.out.println(i);
@@ -65,6 +65,7 @@ public class MyArrayTest {
         int[] ary2 = {1,2,3,4};
         System.out.println("Is array 1 equal to array 2?? " +Arrays.equals(ary, ary1));
         System.out.println("Is array 1 equal to array 3?? " +Arrays.equals(ary, ary2));
+
 
     }
 

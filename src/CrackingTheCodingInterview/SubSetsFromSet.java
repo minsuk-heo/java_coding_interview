@@ -4,6 +4,7 @@ package CrackingTheCodingInterview;
  * input = "abc"
  * output = "", "a", "b", "c", "ab", "ac", "bc", "abc"
  * solution: use Binary tree way, print when dept is the length -1 of input
+ * http://javabypatel.blogspot.in/2015/10/all-subsets-of-set-powerset.html
  * Created by minsukheo on 1/14/17.
  */
 public class SubSetsFromSet {
