@@ -17,18 +17,31 @@ public class QueueUsingTwoStacks {
         queue.push(1);
         queue.push(2);
         System.out.println(queue.pop());
+        queue.push(3);
+        queue.push(4);
+        System.out.println(queue.pop());
+        System.out.println(queue.pop());
+        queue.push(5);
+        System.out.println(queue.pop());
+        queue.push(6);
+        System.out.println(queue.pop());
         System.out.println(queue.pop());
 
     }
 
     private int pop() {
-        while(!st1.isEmpty()) {
-            st2.push(st1.pop());
+        if(!st2.isEmpty()) {
+            return st2.pop();
         }
-        if(st2.isEmpty()) {
-            throw new java.util.NoSuchElementException();
+        else {
+            while(!st1.isEmpty()) {
+                st2.push(st1.pop());
+            }
+            if(st2.isEmpty()) {
+                throw new java.util.NoSuchElementException();
+            }
+            return st2.pop();
         }
-        return st2.pop();
     }
 
     private void push(int item) {
