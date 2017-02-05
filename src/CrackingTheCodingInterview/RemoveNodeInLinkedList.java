@@ -12,7 +12,7 @@ public class RemoveNodeInLinkedList {
         linkedlist.next.next.next = new Node3(4);
         linkedlist.next.next.next.next = new Node3(5);
 
-        linkedlist = solution.run(linkedlist, 2);
+        linkedlist = solution.run(linkedlist, 4);
         while(linkedlist != null) {
             System.out.println(linkedlist.val);
             linkedlist = linkedlist.next;
@@ -25,14 +25,13 @@ public class RemoveNodeInLinkedList {
             head = cur.next;
         }
         else {
-            Node3 prev = cur;
-            cur = cur.next;
-            while(cur.val != i) {
-                prev = cur;
+            while(cur.next != null) {
+                if(cur.next.val == i) {
+                    cur.next = cur.next.next;
+                    break;
+                }
                 cur = cur.next;
             }
-            prev.next = cur.next;
-            cur = null;
         }
         return head;
     }
