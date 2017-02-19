@@ -50,7 +50,6 @@ public class IndexEqualsValue {
                 res[i] = aList.get(i);
             }
         }
-
         return res;
     }
 }
