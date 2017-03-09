@@ -7,7 +7,7 @@ import java.util.List;
  * Created by Minsuk_Heo on 1/1/2017.
  */
 public class MyQueue {
-    List<Integer> queue = new ArrayList<Integer>();
+    private List<Integer> queue = new ArrayList<Integer>();
 
     public void enqueue(Integer n) {
         queue.add(n);
@@ -21,16 +21,22 @@ public class MyQueue {
         return queue.remove(0);
     }
 
+    public boolean isEmpty(){
+        return queue.isEmpty();
+    }
+
     public static void main(String[] args) {
+
         MyQueue mq = new MyQueue();
+
         mq.enqueue(1);
         mq.enqueue(2);
         mq.enqueue(3);
         mq.enqueue(4);
-        System.out.println(mq.dequeue());
-        System.out.println(mq.dequeue());
-        System.out.println(mq.dequeue());
-        System.out.println(mq.dequeue());
+
+        while(!mq.isEmpty()){
+            System.out.println(mq.dequeue());
+        }
     }
 }
 
