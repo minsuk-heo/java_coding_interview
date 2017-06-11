@@ -40,7 +40,7 @@ public class MyStringTest {
         System.out.println(str1.toUpperCase());
         // string + string
         System.out.println(str1+str2);
-        // string + string using stringbuffer
+        // string + string using stringbuffer 
         sb.append("ap1");
         sb.append("ap2");
         System.out.println(sb);
