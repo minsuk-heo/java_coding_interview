@@ -9,7 +9,7 @@ public class MyStringTest {
         String str1 = "hello";
         String str2 = "hello";
 
-        // How to Compare two string
+        // How to Compare two string.
         if(str1.equals(str2)) {
             System.out.println("same");
         }
@@ -40,7 +40,7 @@ public class MyStringTest {
         System.out.println(str1.toUpperCase());
         // string + string
         System.out.println(str1+str2);
-        // string + string using stringbuffer 
+        // string + string using stringbuffer
         sb.append("ap1");
         sb.append("ap2");
         System.out.println(sb);
