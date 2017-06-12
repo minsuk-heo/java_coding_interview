@@ -9,12 +9,12 @@ public class MyStringTest {
         String str1 = "hello";
         String str2 = "hello";
 
-        // How to Compare two string.
+        // How to Compare two string
         if(str1.equals(str2)) {
             System.out.println("same");
         }
 
-        // How to Remove character in string
+        // How to Remove character in string..
         str1 = "this is java";
         System.out.println(removeCharAt(str1,1));
         // How to Replace character or substring by new one
